@@ -1,0 +1,114 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, san-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+.container-2{
+  margin: auto;
+  overflow: hidden;
+  width: 60%;
+}
+
+header{
+  background:#151617;
+  color:#ffffff;
+  padding-top:20px;
+  min-height:70px;
+  font-weight:100;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a{ /* nav buttons */
+  position: relative;
+  text-decoration: none;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+#DG-title{
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 34px;
+  float:left;
+  padding-top: 10px;
+  margin:0;
+}
+
+.colorbar{
+  text-align:center;
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+  padding-bottom:5px;
+  background: /* gradient can be an image */
+    linear-gradient(
+      to left,
+      rgba(0,0,70,1) 0%,
+      rgba(14,90,145,1) 33%,
+      rgba(23,180,234,1) 75%
+    )
+    left
+    bottom
+    #777
+    no-repeat;
+  background-size:100% 5px ;
+}
+
+.current-page{
+  font-weight: bold;
+}
+
+nav a{
+  position: relative;
+}
+nav a:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width:100%;
+  left:0;
+}
+
+
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color: #151617;
+  text-align: center;
+  font-weight: medium;
+  font-size: 15pt;
+}
