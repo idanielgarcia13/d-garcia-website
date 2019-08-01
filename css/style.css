@@ -1,5 +1,6 @@
 body{
-  font-family: -apple-system, BlinkMacSystemFont, san-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, san-serif;*/
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding:0;
   margin:0;
   background-color:#f4f4f4;
@@ -14,7 +15,13 @@ body{
 .container-2{
   margin: auto;
   overflow: hidden;
-  width: 60%;
+  width: 65%;
+}
+
+/* back button */
+.back-button{
+  color: #007AFF;
+  text-decoration: none;
 }
 
 header{
@@ -75,6 +82,7 @@ header nav{
     #777
     no-repeat;
   background-size:100% 5px ;
+
 }
 
 .current-page{
@@ -101,7 +109,137 @@ a:hover:after {
   left:0;
 }
 
+/* social-media icons */
+footer a{
+  padding: 20px;
+  text-decoration: none;
+}
+footer img:hover{
+  opacity: 50;
+}
 
+#under-construction img{
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+#under-construction p{
+  text-align: center;
+}
+#under-construction .hd{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-me img{
+  padding-top: 30px;
+  display: block;
+  margin: auto;
+}
+.about-me p{
+  font-size: 20px;
+}
+
+.social-media-half1{
+  display: inline;
+}
+.social-media-half2{
+  display: inline;
+}
+.coded-with-love-line{
+  padding: 30px;
+}
+.coded-with-love-line img{
+  display: inline;
+  height: 17px;
+  width: 30px;
+  padding-right: 2px;
+}
+.coded-with-love-line p{
+  display: inline;
+}
+
+/* portfolio page */
+.portfolio-icons{
+  width: 70%;
+  margin-left: auto;
+  margin-right: 100px;
+}
+.portfolio-icons a{
+  text-decoration: none;
+  padding: 25px;
+}
+
+/* skills-page */
+.skills ul{
+  list-style-type: none;
+
+}
+.skills li{
+  padding: 10px;
+  display: table;
+
+}
+.skills img{
+  padding: 10px;
+  padding-right: 25px;
+  width: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.skills p{
+  display: table-cell;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.skills{
+  display: inline;
+}
+.prog-lang-section, .pro-apps-section, .iwork-section, .office-section, .google-section, .os-section, .communication-section, .scripting-cmd-section, .certifications-section, .pm-section{
+  padding: 15px;
+  display: inline-grid;
+}
+#skl-small{
+  font-size: 15px;
+}
+
+/* cards */
+.card{
+  width: 320px;
+  height: 430px;
+  border-radius: 35px;
+  margin: 25px;
+  background: #FFFFFF;
+  box-shadow: 0 9px 12px 3px rgba(0,0,0,0.50);
+}
+.card-img img{
+  width: 320px;
+  height: 245;
+  border-radius: 35px 35px 0px 0px;
+}
+.card-des{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.card-des a{
+  color: #407aff;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+}
+
+/* articles */
+.article{
+  font-size: 21px;
+}
+.article p{
+  line-height: 1.6;
+}
+.article img{
+  width: 40%;
+  display: block;
+  margin: auto;
+}
 
 footer{
   padding:20px;
@@ -111,4 +249,48 @@ footer{
   text-align: center;
   font-weight: medium;
   font-size: 15pt;
+}
+
+
+@media(max-width: 768px){
+  .containter{
+    width:90%;
+  }
+  .container-2{
+    width:90%;
+  }
+  #DG-title, header nav, header nav li {
+    text-align: center;
+    float: none;
+    width: 98%;
+  }
+  .about-me p{
+    font-size: 12pt;
+  }
+
+  .social-media{
+    display:block;
+  }
+  .social-media-half2{
+    display:block;
+    padding-top: 15px;
+  }
+  .portfolio-icons{
+    width: 95%;
+  }
+  .portfolio-icons img{
+    padding-bottom: 15px;
+  }
+
+
+  .skills img{
+    width: 43px;
+  }
+  .skills p{
+    font-size: 30px;
+  }
+
+  .article{
+    font-size: 17px;
+  }
 }
