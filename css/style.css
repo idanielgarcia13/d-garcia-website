@@ -204,18 +204,30 @@ footer img:hover{
 }
 
 /* cards */
+.cards{
+
+
+}
 .card{
+  display: inline-block;
   width: 320px;
   height: 430px;
   border-radius: 35px;
   margin: 25px;
   background: #FFFFFF;
   box-shadow: 0 9px 12px 3px rgba(0,0,0,0.50);
+  vertical-align: middle;
 }
 .card-img img{
-  width: 320px;
-  height: 245;
+  /*width: 320px;
+  height: 245;*/
+  max-width: 100%;
+  height: 180px;
   border-radius: 35px 35px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .card-des{
   margin-left: 20px;
@@ -224,7 +236,6 @@ footer img:hover{
 .card-des a{
   color: #407aff;
   text-decoration: none;
-  font-weight: bold;
   float: left;
 }
 
@@ -279,7 +290,8 @@ footer{
     width: 95%;
   }
   .portfolio-icons img{
-    padding-bottom: 15px;
+    width: 300px;
+    padding-bottom: 20px;
   }
 
 
@@ -288,6 +300,18 @@ footer{
   }
   .skills p{
     font-size: 30px;
+  }
+
+  .card{
+    width: 290px;
+    height: 430px;
+    border-radius: 35px;
+
+  }
+  .card-img img{
+    width: 290px;
+    height: 245;
+    border-radius: 35px 35px 0px 0px;
   }
 
   .article{
