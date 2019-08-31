@@ -1,0 +1,9 @@
+# Bitbucket Pipelines Configuration file
+# Written By Ryan Schultz
+pipelines:
+  branches:
+    master:
+      - step:
+          name: rsync
+          script: # Deploy the site
+            - rsync -auv --stats $BITBUCKET_CLONE_DIR/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
