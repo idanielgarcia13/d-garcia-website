@@ -108,6 +108,9 @@ td img:nth-child(2){
 
 
 @media(max-width: 768px){
+  #main-showcase{
+    min-height: 670px;
+  }
   #main-showcase h1{
     font-size: 65px;
   }
